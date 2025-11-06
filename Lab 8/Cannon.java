@@ -17,8 +17,7 @@ public class Cannon extends Actor
         // Add your action code here.\
         MouseInfo mouse = Greenfoot.getMouseInfo();
         if (mouse != null){
-            Vector2D cannonToMouse = new Vector2D(mouse.getX() - getY(),
-                                                  mouse.getX() - getY());
+            Vector2D cannonToMouse = new Vector2D(mouse.getX() - getY(),mouse.getX() - getY());
             
             alignWithVector(cannonToMouse);
             
